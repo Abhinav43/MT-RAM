@@ -4,8 +4,9 @@ from collections import Counter, defaultdict
 import csv
 import operator
 from options import args
-from utils import build_vocab, word_embeddings, fasttext_embeddings, gensim_to_fasttext_embeddings, gensim_to_embeddings, \
-    reformat, write_discharge_summaries, concat_data, split_data
+from dataloader import build_vocab, concat_data, split_data
+from utils import write_discharge_summaries, reformat
+from embeddings import word_embeddings, fasttext_embeddings, gensim_to_fasttext_embeddings, gensim_to_embeddings 
 
 
 
