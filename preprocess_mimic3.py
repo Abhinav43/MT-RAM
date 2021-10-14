@@ -3,12 +3,12 @@ import pandas as pd
 from collections import Counter, defaultdict
 import csv
 import operator
-from options import args
+from options import args_parser
 from dataloader import build_vocab, concat_data, split_data
 from utils import write_discharge_summaries, reformat
 from embeddings import word_embeddings, fasttext_embeddings, gensim_to_fasttext_embeddings, gensim_to_embeddings 
 
-
+args = args_parser()
 
 Y = 'full'
 notes_file = '%s/NOTEEVENTS.csv' % args.MIMIC_3_DIR
